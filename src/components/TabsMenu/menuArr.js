@@ -1,0 +1,72 @@
+export const MENU_ARR = [
+    {
+        id: 1,
+        img: "/assets/img/section-3/sec-3-card-1.jpg",
+        title: "Chicken Burger..........................................",
+        price: "$10.50",
+        isFiltered: "Lunch",
+    },
+    {
+        id: 2,
+        img: "/assets/img/section-3/sec-3-card-2.jpg",
+        title: "Triple Dipper..........................................",
+        price: "$8.90",
+        isFiltered: "Desart",
+    },
+    {
+        id: 3,
+        img: "/assets/img/section-3/sec-3-card-3.jpg",
+        title: "Boneless Wings..........................................",
+        price: "$12.40",
+        isFiltered: "KidsMenu",
+    },
+    {
+        id: 4,
+        img: "/assets/img/section-3/sec-3-card-4.jpg",
+        title: "Califoria Turkey..........................................",
+        price: "$14.50",
+        isFiltered: "Lunch",
+    },
+    {
+        id: 5,
+        img: "/assets/img/section-3/sec-3-card-5.jpg",
+        title: "House BBQ..........................................",
+        price: "$18.30",
+        isFiltered: "Dinner",
+    },
+    {
+        id: 6,
+        img: "/assets/img/section-3/sec-3-card-6.jpg",
+        title: "Santa Fe Crispers..........................................",
+        price: "$12.50",
+        isFiltered: "Desart",
+    },
+    {
+        id: 7,
+        img: "/assets/img/section-3/sec-3-card-7.jpg",
+        title: "Crispy Fiery..........................................",
+        price: "$6.90",
+        isFiltered: "KidsMenu",
+    },
+    {
+        id: 8,
+        img: "/assets/img/section-3/sec-3-card-8.jpg",
+        title: "Chicken Mex Bowl..........................................",
+        price: "$11.40",
+        isFiltered: "Dinner",
+    },
+    {
+        id: 9,
+        img: "/assets/img/section-3/sec-3-card-9.jpg",
+        title: "Pepper Pals..........................................",
+        price: "$14.50",
+        isFiltered: "Breakfast",
+    },
+    {
+        id: 10,
+        img: "/assets/img/section-3/sec-3-card-10.jpg",
+        title: "Chocolate Cake..........................................",
+        price: "$13.30",
+        isFiltered: "Breakfast",
+    }
+];

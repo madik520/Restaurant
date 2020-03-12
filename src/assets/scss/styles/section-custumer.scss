@@ -1,0 +1,156 @@
+#costumer{
+    margin-top: 400px;
+    min-height: 110vh;
+    background-color: #ffe8e7;
+    z-index: -10;
+}
+.customer-title{
+    margin-top: 150px;
+    text-align: center;
+    font-size: $mainFontSize*2;
+    h2{
+        font-family: $Sacramento;
+        color: #ff3a2d;
+    }
+    h3{
+        font-family: $LobsterRegular;
+        color: #222222;
+    }
+}
+.customer-content{
+    margin-top: 90px;
+    min-height: 515px;
+    display: flex;
+    justify-content: space-between;
+}
+.customer-img{
+    margin-right: 30px;
+    width: 370px;
+    height: 515px;
+    background-image: url("/assets/img/section-4/sec-4-man.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        position: relative;
+        left: 190px;
+        font-size: $mainFontSize*1.7;
+        color: #ff3a2d;
+        z-index: -1;
+    }
+}
+.customer-quot{
+    background-color: #ffffff;
+    width: 770px;
+    height: 515px;
+    -webkit-box-shadow: 0px 3px 12px -5px rgba(170,170,170,1);
+    -moz-box-shadow: 0px 3px 12px -5px rgba(170,170,170,1);
+    box-shadow: 0px 3px 12px -5px rgba(170,170,170,1);
+}
+.quot-container{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    i{
+        margin-top: 90px;
+        color: #ff3a2d;
+        font-size: $mainFontSize*4;
+    }
+    p{
+        
+        color: #1c1c1c;
+        font-family: $Poppins-Regular;
+        font-size: $mainFontSize/1.25;
+        line-height: 2;
+        &:nth-of-type(1){
+            margin-top: 50px;
+            color: #808080;
+        }
+        &:nth-of-type(2){
+            margin-top: 30px;
+            color: #808080;
+            font-family: $Poppins-Regular;
+            color: #1c1c1c;
+            font-weight: bold;
+            span{
+                color: #ff3a2d;
+            }
+        }
+        &:nth-of-type(3){
+            margin-top: 50px;
+            font-family: $Sacramento;
+            font-weight: bold;
+            color: #1c1c1c;
+            font-size: $mainFontSize*1.5;
+            line-height: 0.8;
+        }
+        &:nth-of-type(4){
+            font-family: $Sacramento;
+            font-weight: bold;
+            color: #1c1c1c;
+            font-size: $mainFontSize;
+        }
+    }
+}
+@media screen and(max-width: 1195px){
+    .customer-img{
+        i{
+            left: 160px;
+        }
+    }
+}
+@media screen and(max-width:990px){
+    .customer-img{
+        i{
+            left: 122px;
+        }
+    }
+}
+@media screen and(max-width:767px){
+    .customer-content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .customer-img{
+        margin-right: 0;
+        i{
+            display: none;
+        }
+    }
+    .customer-quot{
+        margin-top: 50px;
+        width: 370px;
+    }
+    .quot-container{
+        i{
+            margin-top: 50px;
+            color: #ff3a2d;
+            font-size: $mainFontSize*3;
+        }
+        p{
+            font-size: $mainFontSize/1.4;
+            &:nth-of-type(2){
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:414px){
+    #costumer{
+        margin-top: 300px;
+    }
+    .customer-title{
+        font-size: $mainFontSize*1.5;
+    }
+}
+@media screen and(max-width:414px){
+    #costumer{
+        margin-top: 300px;
+    }
+    .customer-title{
+        font-size: $mainFontSize*1.3;
+    }
+}

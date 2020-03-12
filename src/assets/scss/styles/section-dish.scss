@@ -1,0 +1,402 @@
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        margin-top: 140px;
+        font-family: $Sacramento;
+        color: #ff3a2d;
+        font-size: $mainFontSize*2;
+    }
+    h2{
+        font-family: $LobsterRegular;
+        color: #000000;
+        font-size: $mainFontSize*1.9;
+    }
+}
+.btn-group{
+    width: 65%;
+    margin: auto;
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    .btn-default{
+        font-family: $Poppins-SemiBold;
+        background-color: transparent;
+        font-size: $mainFontSize*1.1;
+        cursor: pointer;
+    }
+    .active{
+        color:#ff3a2d;
+        border-bottom: 3px solid #ff9c96;
+    }
+
+}
+.card-list{
+    margin-top: 95px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li{
+        margin-bottom: 50px;
+        display: flex;
+        animation: fade-in .5s ease-in;
+        .card-img{
+            margin-right: 15px;
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .card-title{
+            display: flex;
+            font-family: $Poppins-SemiBold;
+            font-size: $mainFontSize;
+            span{
+                padding-left: 10px;
+            }
+        }
+        P{
+            width: 90%;
+            margin-top: 25px;
+            font-family: $Poppins-Regular;
+            color: #808080;
+            font-size: $mainFontSize/1.3;
+        }
+    }
+}
+.btn-full-menu{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 70px;
+    background-color: #ff3a2d;
+    font-family: $Poppins-Regular;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.stuff-content{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-family: $Sacramento;
+        color: #ff3a2d;
+        font-size: $mainFontSize*2;
+    }
+    h2{
+        font-family: $LobsterRegular;
+        color: #000000;
+        font-size: $mainFontSize*1.9;
+    }
+}
+.chef-lists{
+    position: relative;
+    right: 30px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    li{
+        width: 370px;
+        background-color: #ffffff;
+        text-align: center;
+        font-family: $LobsterRegular;
+        -webkit-box-shadow: 0px 0px 10px -1px rgba(181,179,181,1);
+        -moz-box-shadow: 0px 0px 10px -1px rgba(181,179,181,1);
+        box-shadow: 0px 0px 10px -1px rgba(181,179,181,1);
+        &:nth-child(2){
+            margin: 0 30px;
+        }
+        .hover-img{
+            img{
+                height: 400px;
+                object-fit: cover;
+            }
+            .hover-effect{
+                display: none;
+            }
+            &:hover{
+                .hover-effect{
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 370px;
+                    height: 400px;
+                    background: linear-gradient(to right ,rgba(56,187,231,0.6), rgba(8,245,239,0.6));
+                    z-index: 1;
+                    div{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color: #ffffff;
+                        color: #ff473b;
+                        cursor: pointer;
+                        &:first-child{
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .item-container{
+            article{
+                margin-top: 35px;
+                color: #808080;
+                h2{
+                    color: #00c5d2;
+                    font-size: $mainFontSize*1.5;
+                }
+                h3{
+                    font-size: $mainFontSize*1.1;
+                    color: #808080;
+                    font-family: $LobsterRegular;
+                }
+                p{
+                    margin-top: 30px;
+                    margin-bottom: 40px;
+                    i{
+                        margin: 0 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.eclipse-large{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+.eclipse-small{
+    position: absolute;
+    right: 260px;
+    bottom: 0;
+    z-index: -9999;
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media screen and(max-width:1280px){
+    .chef-lists{
+        flex-wrap: wrap;
+        justify-content: center;
+        li{
+            margin-bottom: 100px;
+            &:nth-child(2){
+                margin: 0 30px;
+                margin-bottom: 100px;
+            }
+        }
+    }
+    .eclipse-large{
+        left: 50px;
+    }
+    .eclipse-small{
+        position: absolute;
+        right: 400px;
+        bottom: 120px;
+        z-index: -9999;
+    }
+}
+@media screen and(max-width: 990px){
+    .btn-group{
+        width: 90%;
+    }
+    .card-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and(max-width: 900px){
+    .chef-lists{
+        right: 0;
+    }
+    .eclipse-large, .eclipse-small{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .btn-group{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 520px){
+    .main-content{
+        text-align: center;
+        h1{
+            font-size: $mainFontSize*1.5;
+        }
+        h2{
+            font-size: $mainFontSize*1.5;
+        }
+    }
+    .btn-group{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .chef-lists{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 480px){
+    .card-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        li{
+            .card-img{
+                width: 75px;
+                height: 75px;
+            }
+            .card-title{
+                font-size: $mainFontSize/1.4;
+                span{
+                    padding-left: 0px;
+                }
+            }
+            P{
+                width: 100%;
+                font-size: $mainFontSize/1.4;
+            }
+        }
+    }
+}
+@media screen and(max-width:414px){
+    .card-list{
+        li{
+            .card-img{
+                width: 75px;
+                height: 75px;
+            }
+            .card-title{
+                font-size: $mainFontSize/1.5;
+                span{
+                    padding-left: 0px;
+                }
+            }
+            P{
+                margin-top: 10px;
+                width: 100%;
+                font-size: $mainFontSize/1.5;
+            }
+        }
+    }
+    .chef-lists{
+        li{
+            width: 350px;
+            margin-bottom: 100px;
+            &:nth-child(2){
+                margin: 0 30px;
+                margin-bottom: 100px;
+            }
+            .hover-img{
+                img{
+                    height: 400px;
+                    object-fit: cover;
+                }
+                .hover-effect{
+                    display: none;
+                }
+                &:hover{
+                    .hover-effect{
+                        width: 350px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 375px){
+    .chef-lists{
+        li{
+            width: 300px;
+            height: 600px;
+            .hover-img{
+                img{
+                    width: 100%;
+                }
+                &:hover{
+                    .hover-effect{
+                        width: 300px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:320px){
+    .main-content{
+        h1{
+            margin-top: 50px;
+        }
+    }
+    .card-list{
+        li{
+            .card-img{
+                width:75px;
+                height: 75px;
+            }
+            .card-title{
+                font-size: $mainFontSize/1.6;
+            }
+            P{
+                font-size: $mainFontSize/1.6;
+            }
+        }
+    }
+    .stuff-content{
+        margin-top: 150px;
+        h1{
+            text-align: center;
+            font-size: $mainFontSize*1.5;
+        }
+        h2{
+            font-size: $mainFontSize*1.5;
+        }
+    }
+    .chef-lists{
+        li{
+            width: 250px;
+            height: 500px;
+            .hover-img{
+                img{
+                    width: 100%;
+                    height: 280px;
+                }
+                &:hover{
+                    .hover-effect{
+                        width: 250px;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}

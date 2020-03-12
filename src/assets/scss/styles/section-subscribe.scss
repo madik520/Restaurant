@@ -1,0 +1,71 @@
+#subscribe{
+    margin-top: 200px;
+    min-height: 600px;
+    background-image: url("/assets/img/section-5/sec-5-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.subscribe-content{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe-first-block{
+    color: #ffffff;
+    h2{
+        font-family: $LobsterRegular;
+        font-size: $mainFontSize*2;
+    }
+    p{
+        margin-top: 50px;
+        font-family: $Poppins-Regular;
+        line-height: 2;
+        font-size: $mainFontSize/1.4;
+    }
+}
+.subscribe-second-block{
+    margin-top: 100px;
+    display: flex;
+    input{
+        width: 80%;
+        height: 85px;
+        padding-left: 30px;
+        font-family: $Poppins-Regular;
+    }
+    div{
+        width: 20%;
+        height: 85px;
+        background: linear-gradient(to right ,#37bbe7, #09f5ef);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: $mainFontSize*3;
+        cursor: pointer;
+    }
+}
+
+@media screen and(max-width:990px){
+    .subscribe-second-block{
+        input{
+            width: 75%;
+            padding-left: 15px;
+        }
+        div{
+            width: 25%;
+            font-size: $mainFontSize*2;
+        }
+    }
+}
+@media screen and(max-width:767px){
+    .subscribe-content{
+        margin-top: 100px;
+        flex-wrap: wrap;
+    }
+    .subscribe-second-block{
+        div{
+            font-size: $mainFontSize*3;
+        }
+    }
+}

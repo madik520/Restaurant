@@ -1,0 +1,13 @@
+@import "mixins";
+
+
+@include font-face("Raleway", "/assets/fonts/Raleway/Raleway-Regular", 400, regular);
+@include font-face("Source-Semibold", "/assets/fonts/SourceSansPro/SourceSansPro-SemiBold", 600, semi-bold);
+@include font-face("Source-bold", "/assets/fonts/SourceSansPro/SourceSansPro-Bold", 800, bold);
+@include font-face("Poppins-Regular", "/assets/fonts/Poppins/Poppins-Regular", 400, regular);
+@include font-face("Poppins-Medium", "/assets/fonts/Poppins/Poppins-Medium", 500, medium);
+@include font-face("Poppins-SemiBold", "/assets/fonts/Poppins/Poppins-SemiBold", 600, semi-bold);
+@include font-face("Sacramento", "/assets/fonts/Sacramento/Sacramento-Regular", 400, regular);
+@include font-face("LobsterRegular", "/assets/fonts/LobsterTwo/LobsterTwo-Regular", 400, regular);
+@include font-face("LobsterBold", "/assets/fonts/LobsterTwo/LobsterTwo-Bold", 800, bold);
+@include font-face("LobsterBoldItalic", "/assets/fonts/LobsterTwo/LobsterTwo-BoldItalic", 800, bold);
